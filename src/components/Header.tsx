@@ -55,6 +55,7 @@ const Header = () => {
         <nav className={`${styles.mobileNav} ${isMobileMenuOpen ? styles.open : ''}`}>
           {navItems.map((item) => (
             <Link
+            key={item.href}
               href={item.href}
               className={styles.mobileNavItem}
               onClick={() => setIsMobileMenuOpen(false)}

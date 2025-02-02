@@ -1,4 +1,5 @@
 import styles from '@/styles/AboutPage.module.css';
+import Image from 'next/image';
 import { FaDownload, FaCode, FaServer, FaMobile, FaDatabase } from 'react-icons/fa';
 
 interface Service {
@@ -42,9 +43,11 @@ const AboutPage = () => {
         <div className={styles.content}>
           <div className={styles.profileSection}>
             <div className={styles.imageWrapper}>
-              <img 
+              <Image 
                 src="/image.png" 
-                alt="Rehan Amjad" 
+                alt="Rehan Amjad"
+                height={1000}
+                width={1000} 
                 className={styles.profileImage}
               />
             </div>

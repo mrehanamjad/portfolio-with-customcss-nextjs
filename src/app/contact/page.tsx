@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react';
 import styles from '@/styles/ContactPage.module.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 interface SocialLink {
   name: string;
@@ -119,7 +119,7 @@ const ContactPage = () => {
               type="submit" 
               className={styles.submitButton}
             >
-              'Send Message'
+              Send Message
             </button>
           </form>
         </div>

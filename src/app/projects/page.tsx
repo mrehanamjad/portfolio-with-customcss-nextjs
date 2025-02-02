@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styles from '@/styles/ProjectsPage.module.css';
 import Link from 'next/link';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
+import Image from 'next/image';
 
 interface Project {
   title: string;
@@ -130,9 +131,11 @@ const ProjectsPage = () => {
               }}
             >
               <div className={styles.imageContainer}>
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.title}
+                  width={1000}
+                  height={1000}
                   className={styles.projectImage}
                 />
                 <div className={`${styles.overlay} ${

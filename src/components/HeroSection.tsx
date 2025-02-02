@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import styles from '@/styles/HeroSection.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface HeroSectionProps {
   name: string;
@@ -33,7 +34,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.textContent}>
-            <span className={styles.greeting}>Hello, I'm</span>
+            <span className={styles.greeting}>Hello, I&apos;m</span>
             <h1 className={styles.name}>{name}</h1>
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.description}>{description}</p>
@@ -72,7 +73,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className={styles.imageContainer}>
             <div className={styles.backgroundShape} />
             <div className={styles.profileImage}>
-              <img src="/image.png" alt={name} />
+              <Image width={1000} height={1000} src="/image.png" alt={name} />
             </div>
           </div>
         </div>

@@ -1,0 +1,52 @@
+.skillCard {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  
+  .skillCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skillIcon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #667eea;
+  }
+  
+  .skillName {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0 0 1rem 0;
+  }
+  
+  .skillLevelContainer {
+    background: #f7fafc;
+    border-radius: 999px;
+    height: 8px;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .skillLevelBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 999px;
+    transition: width 1s ease;
+  }
+
+  @media (max-width: 480px) {
+    .skillCard {
+      padding: 1.5rem;
+    }
+  }
